@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+.head{
+   
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    
+}
+
+ul{
+    list-style: none;    
+}
+ul>li>a{
+    text-decoration: none;
+    color:#fff;
+}
+
+li, a, button{
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+    
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover{
+    color: #0088a9;
+}
+
+button{
+    padding: 9px 25opx;
+    background-color: aqua;
+    border: none;
+    border-radius: px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: aquamarine;
+}
