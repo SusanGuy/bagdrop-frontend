@@ -4,7 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    background-color: white;
 }
 .head{
    
@@ -12,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     padding: 30px 10%;
+    background-color: black;
     
 }
 
@@ -48,14 +52,55 @@ li, a, button{
 }
 
 button{
-    padding: 9px 25opx;
-    background-color: aqua;
+    padding: 9px 25px;
+    color: black;
     border: none;
-    border-radius: px;
+    border-radius: 10px;
     cursor:pointer;
     transition: all 0.3s ease 0s;
 }
 
 button:hover{
-    background-color: aquamarine;
+    background-color: #0088a9;
 }
+.heading{
+    text-align: center;
+    margin: 10px;
+    color:slategray;
+}
+/* Copied*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+    margin: 0 25px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+    
+}
+.searchform{
+    margin: 25px;
+    
+}
+input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0 10px; 0px;
+    padding: 5px 20px;
+}
+input[type=checkbox]{
+    width: 20px;
+    
+}
+
+    
+
+
