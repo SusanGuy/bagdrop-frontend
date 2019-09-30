@@ -21,24 +21,24 @@
         <h2 class="heading">Sign Up</h2>
         <div class="card">
             <div class="container">
-                <form class="searchform">
+                <form class="searchform" action="127.0.0.1:3000/lado" method='GET'>
                     <label>Username</label><br/>
-                    <input type="text" placeholder="Username"/>
+                    <input type="text" name='username' placeholder="Username"/>
                     <label>First Name</label>
-                    <input type="text" placeholder="First Name"/>
+                    <input type="text" name='firstname' placeholder="First Name"/>
                     <label>Last Name</label>
-                    <input type="text" placeholder="Last Name"/>
+                    <input type="text" name="lastname" placeholder="Last Name"/>
                     <label>Email Address</label>
-                    <input type="email" placeholder="Email" />
+                    <input type="email" name='email' placeholder="Email" />
                     <label>Confirmed Email address</label>
-                    <input type="email" placeholder="Enter email again" />
+                    <input type="email" name='confirmed_email' placeholder="Enter email again" />
                     <label>Password</label>
-                    <input type='password' placeholder="Enter your password">
-                    <label><input type='radio' />Host</label>
-                    <label><input type="radio" />Dropper</label> <br />
+                    <input type='password' name='password' placeholder="Enter your password">
+                    <label><input type='radio' name='type' />Host</label>
+                    <label><input type="radio" name='type' />Dropper</label> <br />
                    
                     
-                    <br><button class="submitbutton">Submit</button>
+                    <br><button class="submitbutton" type="submit">Submit</button>
                     
                 </form>
                 
