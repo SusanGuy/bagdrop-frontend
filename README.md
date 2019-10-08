@@ -1,4 +1,4 @@
-# Booking Website: FrontEnd
+# Bagdrop Website: FrontEnd
 
 Front End portion of the bagdrop website. 
 
