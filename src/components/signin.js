@@ -3,7 +3,7 @@ import Nav from '../components/nav'
 import '../main.css';
 import axios from 'axios';
 import {Redirect} from 'react-router-dom'
-
+import {GoogleLogin} from 'react-google-login'
 
 class Signin extends React.Component{
     constructor(props){
@@ -16,7 +16,9 @@ class Signin extends React.Component{
         }
         this.handleSubmit=this.handleSubmit.bind(this);
         this.handleChange=this.handleChange.bind(this);
+        this.responseGoogle=this.responseGoogle.bind(this);
     }
+    
 
     handleSubmit(event){
         event.preventDefault();
@@ -46,7 +48,9 @@ class Signin extends React.Component{
         })
     }
 
-
+    responseGoogle= (response)=>{
+        console.log(response);
+    }
 
     render(){
         const isAuthenticated= window.localStorage.getItem('isAuthenticated')
@@ -54,6 +58,8 @@ class Signin extends React.Component{
         if(isAuthenticated){
             return <Redirect to='/dashboard' />
         }
+
+        
 
     return (
         <div>
@@ -72,6 +78,16 @@ class Signin extends React.Component{
 
                     <br/><button className="submitbutton">Log in</button>
 
+                    <div>Or, Signin with Google</div>
+                    
+                    <GoogleLogin
+    clientId="281552851493-ef6skro3kbqs1e52gcv2vd9uj4e6ssr2.apps.googleusercontent.com"
+    buttonText="Login with Google"
+    onSuccess={this.responseGoogle}
+    onFailure={this.responseGoogle}
+    cookiePolicy={'single_host_origin'}
+    theme='dark'
+  />
                 </form>
                 <p>
 
@@ -83,8 +99,10 @@ class Signin extends React.Component{
 
     </div>
 
-
+    <script src='https://apis.google.com/js/platform.js' async defer></script>
         </div>
+
+        
     )
     }
 }
